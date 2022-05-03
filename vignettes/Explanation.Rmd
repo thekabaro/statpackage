@@ -1,0 +1,57 @@
+---
+title: "What the package does"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What the package does}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753Jarr0004)
+```
+
+# Introduction
+
+This is my package for documentation of the various functions used throughtout the labs.
+
+# Function scatterhist
+
+This creates a sophisticated scatterplot.
+
+```{r}
+x = c(1, 2, 3);
+y = c(4, 5, 6);
+MATH4753Jarr0004::scatterhist(x, y, "x lab", "y lab");
+```
+
+# Function mybin
+
+This creates a sophisticated barplot using binomial
+
+```{r}
+MATH4753Jarr0004::mybin(1000, 18, 0.3);
+```
+
+# Function myncurve
+
+Creates normal graph with the given area calculater
+
+```{r}
+MATH4753Jarr0004::myncurve(4, 2, 5);
+```
+
+# Function mysample
+
+Creates a sohpisticated barplot of a sample
+
+```{r}
+MATH4753Jarr0004::mysample(1000, 4);
+```
